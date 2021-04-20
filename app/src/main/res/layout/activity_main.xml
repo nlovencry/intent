@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/explicitintent"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Klik disini untuk Explicit Intent"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"/>
+        android:text="BELAJAR INTENT"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/implicitintent"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Klik disini untuk Implicit Intent"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"/>
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/eksplisit"
+            android:onClick="explisit"
+            android:layout_marginTop="25dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="eksplisit"></Button>
+
+        <Button
+            android:id="@+id/implisit"
+            android:onClick="implisit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Implisit"></Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
